@@ -50,7 +50,7 @@ metadata:
   - 2.jpg
   - 3.jpg
   defaultPassword: $APP_SEED
-  torOnly: false
+  mainContainer: web
 
 containers:
 - image: photoprism/photoprism:preview@sha256:e0fdf255dcb486ba212d94f39010ba3d06991ff468b05ddddbe9113f3988efd5
