@@ -9,7 +9,7 @@
   "nodes": [
     {
       "index": 1,
-      "lnNode": "Umbrel",
+      "lnNode": "Citadel",
       "Settings": {
         "userPersona": "MERCHANT",
         "themeMode": "DAY",
