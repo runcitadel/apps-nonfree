@@ -34,7 +34,7 @@ metadata:
 
 containers:
 - image: lnbitsdocker/lnbits:3167645@sha256:1fde47507a7595bf446f32ae8d76822bf7ed39b77f5ec7cb3645de9198a8b42c
-  #user: 1000:1000
+  user: 1000:1000
   init: true
   environment:
     LNBITS_BIND: 0.0.0.0:$APP_LNBITS_WEB_PORT

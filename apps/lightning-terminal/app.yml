@@ -55,7 +55,7 @@ metadata:
   defaultPassword: moneyprintergobrrr
 containers:
   - image: lightninglabs/lightning-terminal:v0.5.2-alpha@sha256:fa6415256bbac022784c2f555dbf1443da0df65cbad742dc433e00afd00841f1
-    #user: 1000:1000
+    user: 1000:1000
     environment:
       HOME: /data
     command:
