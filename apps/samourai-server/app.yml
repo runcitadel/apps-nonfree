@@ -44,7 +44,7 @@ containers:
   image: mariadb:10.6.4@sha256:4bbee12b1adf299211f844ebbe89563675c46965470dcfa40f5278d63c56d030
   init: true
   stop_grace_period: 5m
-  user: 1000:1000
+  #user: 1000:1000
   environment:
     MYSQL_DATABASE: samourai-main
     MYSQL_ROOT_PASSWORD: rootpassword
@@ -60,7 +60,7 @@ containers:
   image: louneskmt/dojo-nodejs:1.11.0@sha256:6d2102a4f75a60f7cf29e4aea00e0e713cd7b5423d8b29b541591daa19c22d4
   init: true
   command: /home/node/app/wait-for-it.sh ${APP_SAMOURAI_SERVER_DB_IP}:3306 --timeout=720 --strict -- /home/node/app/restart.sh
-  user: 1000:1000
+  #user: 1000:1000
   environment:
     COMMON_BTC_NETWORK: $BITCOIN_NETWORK
     DOJO_NODEJS_VERSION_TAG: 1.10.1
@@ -111,7 +111,7 @@ containers:
 - name: whirlpool
   image: louneskmt/whirlpool:0.10.11@sha256:a7cfb9e287aa5f2e4137a5d2fdddbfd348624e24e7dd7bed7fa0f4e2e22734d5
   init: true
-  user: 1000:1000
+  #user: 1000:1000
   command:
   - --listen
   - --cli.apiKey=$APP_SEED_4

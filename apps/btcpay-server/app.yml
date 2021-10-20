@@ -43,7 +43,7 @@ metadata:
 containers:
 - name: nbxplorer
   image: nicolasdorier/nbxplorer:2.2.10@sha256:bfec52de14dba187176e1bdd53a4fcb97bc2a18932e247a6ab2882dda6515ee1
-  user: 1000:1000
+  #user: 1000:1000
   environment:
     NBXPLORER_DATADIR: /data
     NBXPLORER_NETWORK: $BITCOIN_NETWORK
@@ -85,11 +85,11 @@ containers:
   - data/btcpay:/data
   permissions:
   - lnd
-  user: 1000:1000
+  #user: 1000:1000
 
 - name: postgres
   image: postgres:9.6.20@sha256:82c335ccb6b60941cb860cbb8252c12f63fd3e27a0d15bce5bc6de110c02a2b4
-  user: 1000:1000
+  #user: 1000:1000
   environment:
     POSTGRES_HOST_AUTH_METHOD: trust
   data:
