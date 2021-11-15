@@ -52,7 +52,7 @@ metadata:
     - 2.jpg
     - 3.jpg
     - 4.jpg
-  defaultPassword: moneyprintergobrrr
+  defaultPassword: $APP_SEED
 containers:
   - image: lightninglabs/lightning-terminal:v0.5.2-alpha@sha256:fa6415256bbac022784c2f555dbf1443da0df65cbad742dc433e00afd00841f1
     user: 1000:1000
@@ -65,6 +65,7 @@ containers:
       - --remote.lnd.rpcserver=$LND_IP:$LND_GRPC_PORT
       - --remote.lnd.macaroonpath="/lnd/data/chain/bitcoin/$BITCOIN_NETWORK/admin.macaroon"
       - --remote.lnd.tlscertpath="/lnd/tls.cert"
+      - --uipassword="${APP_SEED}"
     name: web
     data:
       - data:/data
