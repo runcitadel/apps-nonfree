@@ -9,7 +9,7 @@ version: 1
 metadata:
   category: Lightning Node Management
   name: LNbits
-  version: "3167645"
+  version: "3d1d145"
   tagline: Multi-user wallet management system
   description: 'LNbits is a simple multi-user and account system for Lightning Network
     that can be used for creating separate Lightning wallets for friends and family
@@ -33,11 +33,12 @@ metadata:
   - 3.jpg
 
 containers:
-- image: lnbitsdocker/lnbits:3167645@sha256:1fde47507a7595bf446f32ae8d76822bf7ed39b77f5ec7cb3645de9198a8b42c
+- image: lnbitsdocker/lnbits:3d1d145@sha256:4e82266691f4c101769f0cd3898267068da8eb9c77aaf239fa9cef2e35126f1d
   user: 1000:1000
   init: true
+  port: 1234
   environment:
-    LNBITS_BIND: 0.0.0.0:$APP_LNBITS_WEB_PORT
+    LNBITS_BIND: 0.0.0.0:1234
     LNBITS_DATA_FOLDER: /data
     LNBITS_BACKEND_WALLET_CLASS: LndWallet
     LND_GRPC_ENDPOINT: $LND_IP
