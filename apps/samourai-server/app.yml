@@ -128,7 +128,7 @@ containers:
   environment:
     WHIRLPOOL_BITCOIN_NETWORK: $BITCOIN_NETWORK
     WHIRLPOOL_DOJO: 'on'
-    WHIRLPOOL_DOJO_IP6: $APP_SAMOURAI_SERVER_MAIN_IP6
+    WHIRLPOOL_DOJO_IP: $APP_SAMOURAI_SERVER_MAIN_IP6
   data:
   - whirlpool:/home/whirlpool/.whirlpool-cli
   needsHiddenService: true
