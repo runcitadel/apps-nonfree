@@ -41,8 +41,8 @@ containers:
     LNBITS_BIND: 0.0.0.0:1234
     LNBITS_DATA_FOLDER: /data
     LNBITS_BACKEND_WALLET_CLASS: LndWallet
-    LND_GRPC_ENDPOINT: $LND_IP6
-    LND_GRPC_PORT: "[${LND_GRPC_PORT}]"
+    LND_GRPC_ENDPOINT: "[${LND_IP6}]"
+    LND_GRPC_PORT: $LND_GRPC_PORT
     LND_GRPC_CERT: /lnd/tls.cert
     LND_GRPC_MACAROON: /lnd/data/chain/bitcoin/$BITCOIN_NETWORK/admin.macaroon
     LNBITS_SITE_TITLE: LNbits legends (Python version) on Citadel
