@@ -58,10 +58,10 @@ containers:
     RTL_CONFIG_PATH: /data
     CHANNEL_BACKUP_PATH: /data/backup
     LN_IMPLEMENTATION: LND
-    LN_SERVER_URL: https://$LND_IP:$LND_REST_PORT
+    LN_SERVER_URL: https://$LND_IP6:$LND_REST_PORT
     MACAROON_PATH: /lnd/data/chain/bitcoin/$BITCOIN_NETWORK
     CONFIG_PATH: /lnd/lnd.conf
-    SWAP_SERVER_URL: https://$APP_RIDE_THE_LIGHTNING_LOOP_IP:8081
+    SWAP_SERVER_URL: https://$APP_RIDE_THE_LIGHTNING_LOOP_IP6:8081
     SWAP_MACAROON_PATH: /loop/.loop/$BITCOIN_NETWORK
   name: web
   data:
@@ -77,7 +77,7 @@ containers:
     HOME: /data
   command:
   - --network=$BITCOIN_NETWORK
-  - --lnd.host="$LND_IP:$LND_GRPC_PORT"
+  - --lnd.host="$LND_IP6:$LND_GRPC_PORT"
   - --lnd.macaroonpath="/lnd/data/chain/bitcoin/$BITCOIN_NETWORK/admin.macaroon"
   - --lnd.tlspath="/lnd/tls.cert"
   - --restlisten=0.0.0.0:8081

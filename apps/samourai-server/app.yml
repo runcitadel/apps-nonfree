@@ -59,14 +59,14 @@ containers:
 - name: node
   image: louneskmt/dojo-nodejs:1.12.1@sha256:b409a8801b071966f19799ae90a12faf3d8863542a2e24a155ae9ff142d4d95b
   init: true
-  command: /home/node/app/wait-for-it.sh ${APP_SAMOURAI_SERVER_DB_IP}:3306 --timeout=720 --strict -- /home/node/app/restart.sh
+  command: /home/node/app/wait-for-it.sh ${APP_SAMOURAI_SERVER_DB_IP6}:3306 --timeout=720 --strict -- /home/node/app/restart.sh
   user: 1000:1000
   environment:
     COMMON_BTC_NETWORK: $BITCOIN_NETWORK
     DOJO_NODEJS_VERSION_TAG: 1.12.1
-    NET_DOJO_TOR_IPV4: $TOR_PROXY_IP
+    NET_DOJO_TOR_IP6V4: $TOR_PROXY_IP6
     NET_DOJO_TOR_PORT: $TOR_PROXY_PORT
-    NET_DOJO_MYSQL_IPV4: $APP_SAMOURAI_SERVER_DB_IP
+    NET_DOJO_MYSQL_IP6V4: $APP_SAMOURAI_SERVER_DB_IP6
     MYSQL_DATABASE: samourai-main
     MYSQL_USER: samourai
     MYSQL_PASSWORD: password
@@ -90,14 +90,14 @@ containers:
     NODE_API_KEY: $APP_SEED_1
     NODE_ADMIN_KEY: $APP_SEED_2
     NODE_JWT_SECRET: $APP_SEED_3
-    BITCOIND_IP: $BITCOIN_IP
+    BITCOIND_IP6: $BITCOIN_IP6
     BITCOIND_RPC_PORT: $BITCOIN_RPC_PORT
     BITCOIND_RPC_USER: $BITCOIN_RPC_USER
     BITCOIND_RPC_PASSWORD: $BITCOIN_RPC_PASS
     BITCOIND_ZMQ_RAWTXS: $BITCOIN_ZMQ_RAWTX_PORT
     BITCOIND_ZMQ_BLK_HASH: $BITCOIN_ZMQ_HASHBLOCK_PORT
     EXPLORER_INSTALL: 'off'
-    INDEXER_IP: $ELECTRUM_IP
+    INDEXER_IP6: $ELECTRUM_IP6
     INDEXER_RPC_PORT: $ELECTRUM_PORT
     INDEXER_BATCH_SUPPORT: inactive
   depends_on:
@@ -128,7 +128,7 @@ containers:
   environment:
     WHIRLPOOL_BITCOIN_NETWORK: $BITCOIN_NETWORK
     WHIRLPOOL_DOJO: 'on'
-    WHIRLPOOL_DOJO_IP: $APP_SAMOURAI_SERVER_MAIN_IP
+    WHIRLPOOL_DOJO_IP6: $APP_SAMOURAI_SERVER_MAIN_IP6
   data:
   - whirlpool:/home/whirlpool/.whirlpool-cli
   needsHiddenService: true

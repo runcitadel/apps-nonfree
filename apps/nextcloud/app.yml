@@ -66,8 +66,8 @@ containers:
   image: nextcloud:22.1.1-apache@sha256:f566c9fd6d904c9be23f0a1f9f61a02c23723f13eac56f6bfcea1a708636aa0f
   port: 80
   environment:
-    MYSQL_HOST: ${APP_NEXTCLOUD_DB_IP}
-    REDIS_HOST: ${APP_NEXTCLOUD_REDIS_IP}
+    MYSQL_HOST: ${APP_NEXTCLOUD_DB_IP6}
+    REDIS_HOST: ${APP_NEXTCLOUD_REDIS_IP6}
     MYSQL_PASSWORD: moneyprintergobrrr
     MYSQL_DATABASE: nextcloud
     MYSQL_USER: nextcloud
