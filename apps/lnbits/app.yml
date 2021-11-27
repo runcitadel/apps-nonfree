@@ -53,3 +53,4 @@ containers:
   - data:/data
   permissions:
   - lnd
+  restart: on-failure
