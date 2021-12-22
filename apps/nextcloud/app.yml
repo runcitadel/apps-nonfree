@@ -75,7 +75,7 @@ containers:
       - redis
     data:
       - data/nextcloud:/var/www/html
-  - image: nextcloud:22.2.3-apache@sha256:5512b02fca6533626ed0a1799b2090255357de9b269d0a04d8f7a6d582438ccc
+  - image: nextcloud:23.0.0@sha256:79ee017a5dd00e063c8fd1f557b2c62eab2594b0bdc41c446402c0be13cbf005
     entrypoint: /cron.sh
     depends_on:
       - db
