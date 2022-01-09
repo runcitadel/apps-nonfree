@@ -134,7 +134,7 @@ containers:
   needsHiddenService: true
   hiddenServicePort: 8898
 
-- image: nginx:1.21.3@sha256:644a70516a26004c97d0d85c7fe1d0c3a67ea8ab7ddf4aff193d9f301670cf36
+- image: nginx:1.21.3-alpine@sha256:1ff1364a1c4332341fc0a854820f1d50e90e11bb0b93eb53b47dc5e10c680116
   init: true
   command: /bin/sh -c "envsubst < /var/www/connect/js/conf.template.js > /var/www/connect/js/conf.js
     && /wait-for node:8080 --timeout=720 -- nginx"
