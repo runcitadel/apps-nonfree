@@ -150,7 +150,7 @@ containers:
   depends_on:
   - node
   hiddenServicePorts: 
-    dojo: 3009
+    dojo: 80
   name: main
   data:
   - nginx/connect:/var/www/connect
