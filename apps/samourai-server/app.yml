@@ -57,7 +57,7 @@ containers:
   - mysql/data:/var/lib/mysql
 
 - name: node
-  image: louneskmt/dojo-nodejs:1.12.1@sha256:b409a8801b071966f19799ae90a12faf3d8863542a2e24a155ae9ff142d4d95b
+  image: ghcr.io/runcitadel/samourai-dojo:develop@sha256:26f4e2bcfc9a053303b8d2b54c24b161ea0f9cf92e6e468bdc0b5d152ae98596
   init: true
   command: /home/node/app/wait-for-it.sh ${APP_SAMOURAI_SERVER_DB_IP}:3306 --timeout=720 --strict -- /home/node/app/restart.sh
   user: 1000:1000
@@ -134,14 +134,14 @@ containers:
   needsHiddenService: true
   hiddenServicePort: 8898
 
-- image: nginx:1.21.3-alpine@sha256:1ff1364a1c4332341fc0a854820f1d50e90e11bb0b93eb53b47dc5e10c680116
+- image: nginx:1.21.3@sha256:644a70516a26004c97d0d85c7fe1d0c3a67ea8ab7ddf4aff193d9f301670cf36
   init: true
   command: /bin/sh -c "envsubst < /var/www/connect/js/conf.template.js > /var/www/connect/js/conf.js
     && /wait-for node:8080 --timeout=720 -- nginx"
   environment:
     COMMON_BTC_NETWORK: $BITCOIN_NETWORK
     DOJO_LOCAL_PORT: 3009
-    DOJO_HIDDEN_SERVICE: $APP_HIDDEN_SERVICE_DOJO
+    DOJO_HIDDEN_SERVICE: $APP_HIDDEN_SERVICE_NODE
     WHIRLPOOL_HIDDEN_SERVICE: $APP_HIDDEN_SERVICE_WHIRLPOOL
     NODE_PREFIX_SUPPORT: support
     NODE_ADMIN_KEY: $APP_SEED_2
