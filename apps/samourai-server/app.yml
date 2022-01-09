@@ -105,7 +105,6 @@ containers:
   permissions:
   - electrum
   - bitcoind
-  needsHiddenService: true
 
 - name: whirlpool
   image: louneskmt/whirlpool:0.10.11@sha256:a7cfb9e287aa5f2e4137a5d2fdddbfd348624e24e7dd7bed7fa0f4e2e22734d5
