@@ -106,7 +106,6 @@ containers:
   - electrum
   - bitcoind
   needsHiddenService: true
-  hiddenServicePort: 3009
 
 - name: whirlpool
   image: louneskmt/whirlpool:0.10.11@sha256:a7cfb9e287aa5f2e4137a5d2fdddbfd348624e24e7dd7bed7fa0f4e2e22734d5
@@ -141,7 +140,7 @@ containers:
   environment:
     COMMON_BTC_NETWORK: $BITCOIN_NETWORK
     DOJO_LOCAL_PORT: 3009
-    DOJO_HIDDEN_SERVICE: $APP_HIDDEN_SERVICE
+    DOJO_HIDDEN_SERVICE: $APP_HIDDEN_SERVICE_NODE
     WHIRLPOOL_HIDDEN_SERVICE: $APP_HIDDEN_SERVICE_WHIRLPOOL
     NODE_PREFIX_SUPPORT: support
     NODE_ADMIN_KEY: $APP_SEED_2
@@ -151,6 +150,8 @@ containers:
   port: 8081
   depends_on:
   - node
+  hiddenServicePorts: 
+    dojo: 3009
   name: main
   data:
   - nginx/connect:/var/www/connect
