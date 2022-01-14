@@ -9,7 +9,7 @@ version: 1
 metadata:
   category: Files
   name: PhotoPrism
-  version: 211128-7e8974fd
+  version: 220107-f5b7ef83
   tagline: Self-host your photo and video library
   description: >-
     PhotoPrism® is a privately hosted app for browsing, organizing,
@@ -53,7 +53,7 @@ metadata:
   mainContainer: web
 
 containers:
-- image: photoprism/photoprism:20211128@sha256:6f1fff0abad93f7d9a8a0c8a6b65af9ad5c3c12d1a22e4867fb93c331336f156
+- image: photoprism/photoprism:20220107@sha256:911fe13e31e757d92fc2dd70a67c63bd9b4199f18927e4c47f2b9fa99c309458
   user: 1000:1000
   environment:
     PHOTOPRISM_ADMIN_PASSWORD: $APP_SEED
