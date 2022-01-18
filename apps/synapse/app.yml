@@ -8,7 +8,7 @@ version: 1
 metadata:
   category: Social
   name: Synapse
-  version: 1.49.2
+  version: 1.50.0
   tagline: Matrix reference homeserver
   description: >-
     Synapse is a reference "homeserver" implementation of Matrix from the core
@@ -36,7 +36,7 @@ metadata:
     - 3.jpg
   torOnly: false
 containers:
-  - image: matrixdotorg/synapse:v1.49.2@sha256:7cd176e66c7783cdc9eb2770ff8ef7dfeaa8f94a5d12755ad1e779d8bcdf01b9
+  - image: matrixdotorg/synapse:v1.50.0@sha256:e6e7f8b953a14b68a110c814fdb97d0c25b584994f6429f7596d13c042b75f60
     user: 1000:1000
     entrypoint: bash
     command: -c './start.py generate && ./start.py migrate_config && exec ./start.py'
@@ -45,9 +45,9 @@ containers:
       GID: "1000"
       SYNAPSE_HTTP_PORT: ${APP_SYNAPSE_SERVER_PORT}
       SYNAPSE_SERVER_NAME: ${APP_HIDDEN_SERVICE}
-      SYNAPSE_REPORT_STATS: "yes"
-      SYNAPSE_ENABLE_REGISTRATION: "yes"
-      SYNAPSE_NO_TLS: "yes"
+      SYNAPSE_REPORT_STATS: yes
+      SYNAPSE_ENABLE_REGISTRATION: yes
+      SYNAPSE_NO_TLS: yes
     name: server
     data:
       - data/synapse:/data
