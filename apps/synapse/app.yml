@@ -8,7 +8,7 @@ version: 1
 metadata:
   category: Social
   name: Synapse
-  version: 1.50.0
+  version: 1.50.1
   tagline: Matrix reference homeserver
   description: >-
     Synapse is a reference "homeserver" implementation of Matrix from the core
@@ -36,7 +36,7 @@ metadata:
     - 3.jpg
   torOnly: false
 containers:
-  - image: matrixdotorg/synapse:v1.50.0@sha256:e6e7f8b953a14b68a110c814fdb97d0c25b584994f6429f7596d13c042b75f60
+  - image: matrixdotorg/synapse:v1.50.1@sha256:c5d5d3eb368e128926df88a94f545f13d0fefd0bb450ca594281b3e9a6fefbab
     user: 1000:1000
     entrypoint: bash
     command: -c './start.py generate && ./start.py migrate_config && exec ./start.py'
