@@ -39,7 +39,7 @@
         "id": "synapse",
         "name": "Synapse",
         "repo": "https://github.com/matrix-org/synapse",
-        "version": "1.50.1"
+        "version": "1.50.2"
     },
     {
         "id": "simple-torrent",
