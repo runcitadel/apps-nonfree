@@ -1,35 +1,5 @@
 [
     {
-        "id": "element",
-        "name": "Element",
-        "repo": "https://github.com/vector-im/element-web",
-        "version": "2.1.5"
-    },
-    {
-        "id": "photoprism",
-        "name": "PhotoPrism",
-        "repo": "https://github.com/photoprism/photoprism",
-        "version": "220107-f5b7ef83"
-    },
-    {
-        "id": "simple-torrent",
-        "name": "SimpleTorrent",
-        "repo": "https://github.com/boypt/simple-torrent",
-        "version": "1.3.9"
-    },
-    {
-        "id": "lnbits",
-        "name": "LNbits",
-        "repo": "https://github.com/lnbits/lnbits",
-        "version": "3d1d145"
-    },
-    {
-        "id": "synapse",
-        "name": "Synapse",
-        "repo": "https://github.com/matrix-org/synapse",
-        "version": "1.50.1"
-    },
-    {
         "id": "gitea",
         "name": "Gitea",
         "repo": "https://github.com/go-gitea/gitea",
@@ -42,10 +12,40 @@
         "version": "1.13.0"
     },
     {
+        "id": "element",
+        "name": "Element",
+        "repo": "https://github.com/vector-im/element-web",
+        "version": "2.1.5"
+    },
+    {
         "id": "home-assistant",
         "name": "Home Assistant",
         "repo": "https://github.com/home-assistant/core",
         "version": "2021.12.10"
+    },
+    {
+        "id": "lnbits",
+        "name": "LNbits",
+        "repo": "https://github.com/lnbits/lnbits",
+        "version": "3d1d145"
+    },
+    {
+        "id": "photoprism",
+        "name": "PhotoPrism",
+        "repo": "https://github.com/photoprism/photoprism",
+        "version": "220107-f5b7ef83"
+    },
+    {
+        "id": "synapse",
+        "name": "Synapse",
+        "repo": "https://github.com/matrix-org/synapse",
+        "version": "1.50.1"
+    },
+    {
+        "id": "simple-torrent",
+        "name": "SimpleTorrent",
+        "repo": "https://github.com/boypt/simple-torrent",
+        "version": "1.3.9"
     },
     {
         "id": "pi-hole",
