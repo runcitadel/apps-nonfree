@@ -51,6 +51,6 @@
         "id": "pi-hole",
         "name": "Pi-hole",
         "repo": "https://github.com/pi-hole/pi-hole",
-        "version": "2021.09"
+        "version": "2022.01"
     }
 ]
