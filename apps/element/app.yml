@@ -51,6 +51,6 @@ metadata:
   torOnly: false
 
 containers:
-- image: getumbrel/element-web:v1.7.34@sha256:f7f6229d2dca55b08fc976088d5797d6348842bcb2317e72d40704c3c9b117c2
+- image: ghcr.io/runcitadel/element-web:develop@sha256:a5cc383669e7ae6ddcf74123d860e4758eaf31e9c1c1f7f3534976a0bb509afc
   port: 80
   name: web
