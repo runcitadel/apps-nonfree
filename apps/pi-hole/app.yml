@@ -41,7 +41,7 @@ metadata:
   torOnly: false
 
 containers:
-- image: pihole/pihole:2022.01@sha256:0508aef012bb178094487bacec5859af4ccc08b3b83a96dcc061ec6da7f05b2f
+- image: pihole/pihole:nightly@sha256:e7a653e3dfaa03ecaeaec05bc0f200f2be574ea9834562281b38e2c6fde7e488
   port: 80
   ports:
     - '53:53'
