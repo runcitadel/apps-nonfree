@@ -9,7 +9,7 @@ version: 1
 metadata:
   category: Networking
   name: Pi-hole
-  version: "2021.09"
+  version: "2022.01"
   tagline: Block ads on your entire network
   description: >-
     Instead of browser plugins or other software on each computer, install
@@ -41,11 +41,12 @@ metadata:
   torOnly: false
 
 containers:
-- image: pihole/pihole:2021.09@sha256:42837bd859b91b5584e9df185a59b16fda2f04109d68f050889a58274ff27004
+- image: pihole/pihole:2022.01@sha256:0508aef012bb178094487bacec5859af4ccc08b3b83a96dcc061ec6da7f05b2
   port: 80
   ports:
-  - '53:53'
-  - 53:53/udp
+    - '53:53'
+    - 53:53/udp
+    - "67:67/udp"
   environment:
     VIRTUAL_HOST: ${APP_DOMAIN}
     WEBPASSWORD: $APP_SEED
