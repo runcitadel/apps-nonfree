@@ -45,9 +45,9 @@ containers:
       GID: "1000"
       SYNAPSE_HTTP_PORT: ${APP_SYNAPSE_SERVER_PORT}
       SYNAPSE_SERVER_NAME: ${APP_HIDDEN_SERVICE}
-      SYNAPSE_REPORT_STATS: yes
-      SYNAPSE_ENABLE_REGISTRATION: yes
-      SYNAPSE_NO_TLS: yes
+      SYNAPSE_REPORT_STATS: "yes"
+      SYNAPSE_ENABLE_REGISTRATION: "yes"
+      SYNAPSE_NO_TLS: "yes"
     name: server
     data:
       - data/synapse:/data
