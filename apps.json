@@ -3,7 +3,7 @@
         "id": "gitea",
         "name": "Gitea",
         "repo": "https://github.com/go-gitea/gitea",
-        "version": "1.15.11"
+        "version": "1.16.0"
     },
     {
         "id": "samourai-server",
