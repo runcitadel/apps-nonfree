@@ -1,15 +1,21 @@
 [
     {
+        "id": "lnbits",
+        "name": "LNbits",
+        "repo": "https://github.com/lnbits/lnbits",
+        "version": "3d1d145"
+    },
+    {
+        "id": "pi-hole",
+        "name": "Pi-hole",
+        "repo": "https://github.com/pi-hole/pi-hole",
+        "version": "2022.01"
+    },
+    {
         "id": "gitea",
         "name": "Gitea",
         "repo": "https://github.com/go-gitea/gitea",
         "version": "1.16.0"
-    },
-    {
-        "id": "samourai-server",
-        "name": "Samourai Server",
-        "repo": "https://github.com/louneskmt/umbrel-samourai-dojo/tree/v1.10.1-umbrel",
-        "version": "1.13.0"
     },
     {
         "id": "element",
@@ -24,10 +30,16 @@
         "version": "2022.2.0"
     },
     {
-        "id": "lnbits",
-        "name": "LNbits",
-        "repo": "https://github.com/lnbits/lnbits",
-        "version": "3d1d145"
+        "id": "samourai-server",
+        "name": "Samourai Server",
+        "repo": "https://github.com/louneskmt/umbrel-samourai-dojo/tree/v1.10.1-umbrel",
+        "version": "1.13.0"
+    },
+    {
+        "id": "simple-torrent",
+        "name": "SimpleTorrent",
+        "repo": "https://github.com/boypt/simple-torrent",
+        "version": "1.3.9"
     },
     {
         "id": "photoprism",
@@ -40,17 +52,5 @@
         "name": "Synapse",
         "repo": "https://github.com/matrix-org/synapse",
         "version": "1.51.0"
-    },
-    {
-        "id": "simple-torrent",
-        "name": "SimpleTorrent",
-        "repo": "https://github.com/boypt/simple-torrent",
-        "version": "1.3.9"
-    },
-    {
-        "id": "pi-hole",
-        "name": "Pi-hole",
-        "repo": "https://github.com/pi-hole/pi-hole",
-        "version": "2022.01"
     }
 ]
