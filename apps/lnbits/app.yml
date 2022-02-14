@@ -8,7 +8,7 @@ version: 1
 metadata:
   category: Lightning Node Management
   name: LNbits
-  version: 9807e7d
+  version: 8c923ad
   tagline: Multi-user wallet management system
   description: >-
     LNbits is a simple multi-user and account system for Lightning Network that
@@ -30,7 +30,6 @@ metadata:
     - 2.jpg
     - 3.jpg
   defaultPassword: $APP_SEED
-
 containers:
   - image: ghcr.io/runcitadel/lnbits:feat-admin-password@sha256:d62fe931a83fbd9ad35cb88b468c9d29bc800a7fada6c93430918757b163831b
     user: 1000:1000
