@@ -35,9 +35,8 @@ containers:
   - image: ghcr.io/runcitadel/lnbits:feat-admin-password@sha256:d62fe931a83fbd9ad35cb88b468c9d29bc800a7fada6c93430918757b163831b
     user: 1000:1000
     init: true
-    port: 1234
+    port: 5000
     environment:
-      LNBITS_BIND: 0.0.0.0:1234
       LNBITS_DATA_FOLDER: /data
       LNBITS_BACKEND_WALLET_CLASS: LndWallet
       LND_GRPC_ENDPOINT: $LND_IP
