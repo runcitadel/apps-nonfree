@@ -31,7 +31,7 @@ metadata:
     - 3.jpg
   defaultPassword: $APP_SEED
 containers:
-  - image: ghcr.io/runcitadel/lnbits:feat-admin-password@sha256:9db49caf65037d9bcb8b018f87c5cc0521afea33af36d506e998ba0a79ca7791
+  - image: ghcr.io/runcitadel/lnbits:feat-admin-password@sha256:120a5f69798ad91d8676f41bb2be97c99e05160609b4a54df1dcc43c1832ecfe
     user: 1000:1000
     init: true
     port: 5000
