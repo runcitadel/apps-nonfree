@@ -8,7 +8,7 @@ version: 1
 metadata:
   category: Lightning Node Management
   name: LNbits
-  version: c626e12
+  version: 573c4cf
   tagline: Multi-user wallet management system
   description: >-
     LNbits is a simple multi-user and account system for Lightning Network that
