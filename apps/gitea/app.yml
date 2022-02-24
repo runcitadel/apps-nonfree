@@ -8,7 +8,7 @@ version: 1
 metadata:
   category: Development
   name: Gitea
-  version: 1.16.1
+  version: 1.16.2
   tagline: A painless self-hosted Git service
   description: >-
     Gitea is a painless self-hosted Git service. It is similar to GitHub,
@@ -45,7 +45,7 @@ metadata:
     - 3.jpg
   mainContainer: server
 containers:
-  - image: gitea/gitea:1.16.1@sha256:bd36095359861e6970705a70d58ae0536f92f0d3f2d25c18ed663e94380c546a
+  - image: gitea/gitea:1.16.2@sha256:c1852a4f2e0532f57b1cc70f04bdcef2b592ceb7e7ea17c1aab117bd044db294
     user: 1000:1000
     ports:
       - 2222:2222
