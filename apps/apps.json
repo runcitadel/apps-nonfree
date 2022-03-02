@@ -27,7 +27,7 @@
         "id": "home-assistant",
         "name": "Home Assistant",
         "repo": "https://github.com/home-assistant/core",
-        "version": "2022.2.9"
+        "version": "2022.3.0"
     },
     {
         "id": "samourai-server",
