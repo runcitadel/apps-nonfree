@@ -15,7 +15,7 @@
         "id": "gitea",
         "name": "Gitea",
         "repo": "https://github.com/go-gitea/gitea",
-        "version": "1.16.2"
+        "version": "1.16.3"
     },
     {
         "id": "element",
