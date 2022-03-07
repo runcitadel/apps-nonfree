@@ -32,7 +32,7 @@
     {
         "id": "samourai-server",
         "name": "Samourai Server",
-        "repo": "https://github.com/louneskmt/umbrel-samourai-dojo/tree/v1.10.1-umbrel",
+        "repo": "https://github.com/runcitadel/samourai-dojo",
         "version": "1.13.0"
     },
     {
