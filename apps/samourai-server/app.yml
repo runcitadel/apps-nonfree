@@ -9,7 +9,7 @@ version: 1
 metadata:
   category: Wallet Servers
   name: Samourai Server
-  version: 1.13.0
+  version: 1.14.0
   tagline: Your private backing server for Samourai Wallet.
   description: >-
     Samourai Server is a Citadel app that runs Samourai Dojo
@@ -57,7 +57,7 @@ containers:
   - mysql/data:/var/lib/mysql
 
 - name: node
-  image: ghcr.io/runcitadel/samourai-dojo:develop@sha256:26f4e2bcfc9a053303b8d2b54c24b161ea0f9cf92e6e468bdc0b5d152ae98596
+  image: ghcr.io/runcitadel/samourai-dojo:develop@sha256:2fb658b4c094004631ebe697d51dffa2d9397e0a980939eeadcbc071ac3539f3
   init: true
   command: /home/node/app/wait-for-it.sh ${APP_SAMOURAI_SERVER_DB_IP}:3306 --timeout=720 --strict -- /home/node/app/restart.sh
   user: 1000:1000
