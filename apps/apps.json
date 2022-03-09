@@ -33,7 +33,7 @@
         "id": "samourai-server",
         "name": "Samourai Server",
         "repo": "https://github.com/runcitadel/samourai-dojo",
-        "version": "1.13.0"
+        "version": "1.14.0"
     },
     {
         "id": "simple-torrent",
