@@ -31,17 +31,16 @@ metadata:
     - 3.jpg
   defaultPassword: $APP_SEED
 containers:
-  - image: ghcr.io/runcitadel/lnbits-legends:feat-admin-password@sha256:2ac6e05c606936fbff278a44b895a0dc484d0be34893f01dcc77d9b74d592e8f
+  - image: ghcr.io/runcitadel/lnbits-legends:feat-admin-password@sha256:f484cf3531d1bb14d95159fe2e7596f738e0991163190a7a346d594ec9bb80e5
     user: 1000:1000
     init: true
     port: 5000
     environment:
       LNBITS_DATA_FOLDER: /data
       LNBITS_BACKEND_WALLET_CLASS: LndWallet
-      LND_GRPC_ENDPOINT: $LND_IP
-      LND_GRPC_PORT: $LND_GRPC_PORT
-      LND_GRPC_CERT: /lnd/tls.cert
-      LND_GRPC_MACAROON: /lnd/data/chain/bitcoin/$BITCOIN_NETWORK/admin.macaroon
+      LND_REST_ENDPOINT: https://$LND_IP:$LND_REST_PORT/
+      LND_REST_CERT: /lnd/tls.cert
+      LND_REST_MACAROON: /lnd/data/chain/bitcoin/$BITCOIN_NETWORK/admin.macaroon
       LNBITS_SITE_TITLE: LNbits on Citadel
       LNBITS_DEFAULT_WALLET_NAME: LNbits wallet
       LNBITS_DISABLED_EXTENSIONS: amilk
