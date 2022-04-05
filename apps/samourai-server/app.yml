@@ -99,6 +99,7 @@ containers:
     EXPLORER_INSTALL: 'off'
     INDEXER_IP: $ELECTRUM_IP
     INDEXER_RPC_PORT: $ELECTRUM_PORT
+    INDEXER_PROTOCOL: tcp
     INDEXER_BATCH_SUPPORT: inactive
   depends_on:
   - db
