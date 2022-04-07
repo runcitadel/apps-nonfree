@@ -1,9 +1,9 @@
 [
     {
-        "id": "simple-torrent",
-        "name": "SimpleTorrent",
-        "repo": "https://github.com/boypt/simple-torrent",
-        "version": "1.3.9"
+        "id": "samourai-server",
+        "name": "Samourai Server",
+        "repo": "https://github.com/runcitadel/samourai-dojo",
+        "version": "1.14.0"
     },
     {
         "id": "home-assistant",
@@ -18,33 +18,33 @@
         "version": "2.1.5"
     },
     {
-        "id": "gitea",
-        "name": "Gitea",
-        "repo": "https://github.com/go-gitea/gitea",
-        "version": "1.16.5"
-    },
-    {
-        "id": "lnbits",
-        "name": "LNbits",
-        "repo": "https://github.com/lnbits/lnbits",
-        "version": "baf55af"
-    },
-    {
         "id": "photoprism",
         "name": "PhotoPrism",
         "repo": "https://github.com/photoprism/photoprism",
         "version": "220302-0059f429"
     },
     {
-        "id": "samourai-server",
-        "name": "Samourai Server",
-        "repo": "https://github.com/runcitadel/samourai-dojo",
-        "version": "1.14.0"
+        "id": "gitea",
+        "name": "Gitea",
+        "repo": "https://github.com/go-gitea/gitea",
+        "version": "1.16.5"
     },
     {
         "id": "pi-hole",
         "name": "Pi-hole",
         "repo": "https://github.com/pi-hole/pi-hole",
         "version": "2022.01"
+    },
+    {
+        "id": "simple-torrent",
+        "name": "SimpleTorrent",
+        "repo": "https://github.com/boypt/simple-torrent",
+        "version": "1.3.9"
+    },
+    {
+        "id": "lnbits",
+        "name": "LNbits",
+        "repo": "https://github.com/lnbits/lnbits",
+        "version": "baf55af"
     }
 ]
