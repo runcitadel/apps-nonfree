@@ -3,7 +3,7 @@
         "id": "samourai-server",
         "name": "Samourai Server",
         "repo": "https://github.com/runcitadel/samourai-dojo",
-        "version": "1.14.0"
+        "version": "1.15.0"
     },
     {
         "id": "home-assistant",
