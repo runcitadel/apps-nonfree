@@ -2,9 +2,9 @@
 #
 # SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 
-# yaml-language-server: $schema=../../app-standard-v1.json
+# yaml-language-server: $schema=../../app-standard-v3.yml
 
-version: 1
+version: 3
 
 metadata:
   category: Social
@@ -39,8 +39,8 @@ metadata:
 
     Element is open source. You know exactly what you're getting. 
     Full transparency, the freedom to extend and customise with the support of a vibrant community of developers.
-  developer: New Vector Ltd
-  website: https://element.io
+  developers:
+    New Vector Ltd: https://element.io
   dependencies: []
   repo: https://github.com/vector-im/element-web
   support: https://matrix.to/#/#element-web:matrix.org
