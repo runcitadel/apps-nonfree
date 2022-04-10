@@ -2,9 +2,10 @@
 #
 # SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 
-# yaml-language-server: $schema=../../app-standard-v1.json
+# yaml-language-server: $schema=../../app-standard-v3.yml
 
-version: 1
+version: 3
+
 metadata:
   category: Networking
   name: SimpleTorrent
@@ -34,8 +35,8 @@ metadata:
     - Protocol Handler to magnet:
 
     - Magnet RSS subscribing supported
-  developer: Preston
-  website: https://github.com/boypt
+  developers:
+    Preston: https://github.com/boypt
   dependencies: []
   repo: https://github.com/boypt/simple-torrent
   support: https://github.com/boypt/simple-torrent/issues

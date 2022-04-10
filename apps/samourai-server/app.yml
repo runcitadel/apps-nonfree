@@ -2,9 +2,9 @@
 #
 # SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 
-# yaml-language-server: $schema=../../app-standard-v1.json
+# yaml-language-server: $schema=../../app-standard-v3.yml
 
-version: 1
+version: 3
 
 metadata:
   category: Wallet Servers
@@ -25,9 +25,9 @@ metadata:
     any complexity.
 
 
-    Bundles Whirlpool CLI v0.10.11.
-  developer: Samourai
-  website: https://samouraiwallet.com
+    Bundles Whirlpool CLI v0.10.13.
+  developers:
+    Samourai: https://samouraiwallet.com
   dependencies:
   - electrum
   - bitcoind
@@ -103,12 +103,9 @@ containers:
     INDEXER_BATCH_SUPPORT: inactive
   depends_on:
   - db
-  permissions:
-  - electrum
-  - bitcoind
 
 - name: whirlpool
-  image: louneskmt/whirlpool:0.10.11@sha256:a7cfb9e287aa5f2e4137a5d2fdddbfd348624e24e7dd7bed7fa0f4e2e22734d5
+  image: ghcr.io/runcitadel/whirlpool-cli:main@sha256:83d14099c1c3f9fbd3471eee75539d81dd0a48cfdf29e1151ace5dbfa9438b7d
   init: true
   user: 1000:1000
   command:
@@ -130,8 +127,7 @@ containers:
     WHIRLPOOL_DOJO_IP: $APP_SAMOURAI_SERVER_MAIN_IP
   data:
   - whirlpool:/home/whirlpool/.whirlpool-cli
-  needsHiddenService: true
-  hiddenServicePort: 8898
+  hiddenServicePorts: 8898
 
 - image: nginx:1.21.3-alpine@sha256:1ff1364a1c4332341fc0a854820f1d50e90e11bb0b93eb53b47dc5e10c680116
   init: true
@@ -145,8 +141,8 @@ containers:
     NODE_PREFIX_SUPPORT: support
     NODE_ADMIN_KEY: $APP_SEED_2
     WHIRLPOOL_API_KEY: $APP_SEED_4
-  ports:
-  - 3009:80
+  requiredPorts:
+  - 3009
   port: 8081
   depends_on:
   - node

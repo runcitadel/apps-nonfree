@@ -2,9 +2,10 @@
 #
 # SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 
-# yaml-language-server: $schema=../../app-standard-v1.json
+# yaml-language-server: $schema=../../app-standard-v3.yml
 
-version: 1
+version: 3
+
 metadata:
   category: Automation
   name: Home Assistant
@@ -24,8 +25,8 @@ metadata:
     - Alert you when you leave your garage door open
 
     All your smart home data stays local. Home Assistant communicates with your devices locally, and will fallback to pulling in data from the cloud if there is no other option. No data is stored in the cloud, and everything is processed locally.
-  developer: Home Assistant
-  website: https://home-assistant.io
+  developers:
+    Home Assistant: https://home-assistant.io
   dependencies: []
   repo: https://github.com/home-assistant/core
   support: https://community.home-assistant.io

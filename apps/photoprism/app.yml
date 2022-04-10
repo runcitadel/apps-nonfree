@@ -2,9 +2,10 @@
 #
 # SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 
-# yaml-language-server: $schema=../../app-standard-v1.json
+# yaml-language-server: $schema=../../app-standard-v3.yml
 
-version: 1
+version: 3
+
 metadata:
   category: Files
   name: PhotoPrism
@@ -28,8 +29,8 @@ metadata:
     - WebDAV clients, like Microsoft's Windows Explorer or Apple's Finder,  may connect directly to PhotoPrism so that you to can open, edit, and delete files from your computer or phone as if they were local. You may easily sync your pictures with PhotoSync as well.
 
     - Because PhotoPrism is built as a progressive web app, it provides a native app-like experience, and you may install it on your home screen. There's also a community-maintained native app in development.
-  developer: PhotoPrism
-  website: https://photoprism.app
+  developers:
+    PhotoPrism: https://photoprism.app
   dependencies: []
   repo: https://github.com/photoprism/photoprism
   support: https://gitter.im/browseyourlife/community
@@ -38,7 +39,7 @@ metadata:
     - 2.jpg
     - 3.jpg
   defaultPassword: $APP_SEED
-  mainContainer: web
+
 containers:
   - image: photoprism/photoprism:20220107@sha256:911fe13e31e757d92fc2dd70a67c63bd9b4199f18927e4c47f2b9fa99c309458
     user: 1000:1000
@@ -57,7 +58,7 @@ containers:
       PHOTOPRISM_SITE_CAPTION: Digital Asset Management
       PHOTOPRISM_SITE_DESCRIPTION: ""
       PHOTOPRISM_SITE_AUTHOR: ""
-    name: web
+    name: main
     data:
       - storage:/photoprism/storage
       - originals:/photoprism/originals
