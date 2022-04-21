@@ -27,7 +27,7 @@
         "id": "gitea",
         "name": "Gitea",
         "repo": "https://github.com/go-gitea/gitea",
-        "version": "1.16.5"
+        "version": "1.16.6"
     },
     {
         "id": "pi-hole",
