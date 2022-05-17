@@ -1,9 +1,27 @@
 [
     {
-        "id": "element",
-        "name": "Element",
-        "repo": "https://github.com/vector-im/element-web",
-        "version": "2.1.5"
+        "id": "samourai-server",
+        "name": "Samourai Server",
+        "repo": "https://github.com/runcitadel/samourai-dojo",
+        "version": "1.15.0"
+    },
+    {
+        "id": "lnbits",
+        "name": "LNbits",
+        "repo": "https://github.com/lnbits/lnbits",
+        "version": "baf55af"
+    },
+    {
+        "id": "simple-torrent",
+        "name": "SimpleTorrent",
+        "repo": "https://github.com/boypt/simple-torrent",
+        "version": "1.3.9"
+    },
+    {
+        "id": "photoprism",
+        "name": "PhotoPrism",
+        "repo": "https://github.com/photoprism/photoprism",
+        "version": "220302-0059f429"
     },
     {
         "id": "gitea",
@@ -18,28 +36,10 @@
         "version": "2022.5.4"
     },
     {
-        "id": "simple-torrent",
-        "name": "SimpleTorrent",
-        "repo": "https://github.com/boypt/simple-torrent",
-        "version": "1.3.9"
-    },
-    {
-        "id": "lnbits",
-        "name": "LNbits",
-        "repo": "https://github.com/lnbits/lnbits",
-        "version": "baf55af"
-    },
-    {
-        "id": "photoprism",
-        "name": "PhotoPrism",
-        "repo": "https://github.com/photoprism/photoprism",
-        "version": "220302-0059f429"
-    },
-    {
-        "id": "samourai-server",
-        "name": "Samourai Server",
-        "repo": "https://github.com/runcitadel/samourai-dojo",
-        "version": "1.15.0"
+        "id": "element",
+        "name": "Element",
+        "repo": "https://github.com/vector-im/element-web",
+        "version": "2.1.5"
     },
     {
         "id": "pi-hole",
