@@ -2,9 +2,9 @@
 #
 # SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 
-# yaml-language-server: $schema=../../app-standard-v1.json
+# yaml-language-server: $schema=../../app-standard-v3.yml
 
-version: 1
+version: 3
 
 metadata:
   category: Networking
@@ -28,8 +28,8 @@ metadata:
     
     Pi-hole® and the Pi-hole® logo are registered trademarks of Pi-hole. 
     Citadel is not sponsored, endorsed by, or associated with Pi-hole®.
-  developer: Pi-hole®
-  website: https://pi-hole.net
+  developers:
+    Pi-hole®: https://pi-hole.net
   dependencies: []
   repo: https://github.com/pi-hole/pi-hole
   support: https://discourse.pi-hole.net
@@ -43,10 +43,11 @@ metadata:
 containers:
 - image: pihole/pihole:nightly@sha256:e7a653e3dfaa03ecaeaec05bc0f200f2be574ea9834562281b38e2c6fde7e488
   port: 80
-  ports:
-    - '53:53'
-    - 53:53/udp
-    - "67:67/udp"
+  requiredUdpPorts:
+    - 53
+    - 67
+  requiredPorts:
+    - 53
   environment:
     VIRTUAL_HOST: ${APP_DOMAIN}
     WEBPASSWORD: $APP_SEED
