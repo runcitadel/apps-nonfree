@@ -14,10 +14,10 @@ metadata:
   description: >-
     Element is a new type of messaging app. You choose where your messages
     are stored, putting you in control of your data.
-    You can connect it to the Synapse  installation running on your Umbrel.
-    An easy way to get started is to install the "Synapse" Matrix homserver on your Umbrel
+    You can connect it to the Synapse installation running on your Citadel.
+    An easy way to get started is to install the "Synapse" Matrix homserver on your Citadel
     and change Element's Homserver URL from matrix.org 
-    to your Synapse's homeserver URL (http://umbrel.local:8008
+    to your Synapse's homeserver URL (http://citadel.local:8008
     or http://<synapse-tor-hidden-service-url>).
     
     It gives you access to the Matrix open network, so you can talk to anyone. 
@@ -51,6 +51,6 @@ metadata:
   torOnly: false
 
 containers:
-- image: ghcr.io/runcitadel/element-web:develop@sha256:a5cc383669e7ae6ddcf74123d860e4758eaf31e9c1c1f7f3534976a0bb509afc
+- image: ghcr.io/runcitadel/element-web:develop@sha256:55397537046d0700c260e857ba5b4f7a5152177c3b6d7e3a2f9d0b0c58dbc767
   port: 80
   name: web
