@@ -8,7 +8,7 @@ version: 3
 metadata:
   category: Automation
   name: Home Assistant
-  version: 2022.7.0
+  version: 2022.7.1
   tagline: Home automation that puts local control & privacy first
   description: >-
     Open source home automation that puts local control and privacy first,
@@ -35,7 +35,7 @@ metadata:
     - 3.jpg
 containers:
   - name: server
-    image: homeassistant/home-assistant:2022.7.0@sha256:586c25ec256bc3a7572ec1451d0cf4bdb76ce844a3cc5d5acdf9d019cbd7e243
+    image: homeassistant/home-assistant:2022.7.1@sha256:35f1ad234297ac5d75d0ec69b1c0d8cf906f610351c40cd0ac4eb7d148cfed1a
     port: 8123
     data:
       - data:/config
