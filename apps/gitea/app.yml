@@ -51,7 +51,7 @@ containers:
     environment:
       GITEA__security__INSTALL_LOCK: "true"
       GITEA__server__DOMAIN: ${APP_DOMAIN}
-      GITEA__server__HTTP_PORT: ${APP_GITEA_SERVER_PORT}
+      GITEA__server__HTTP_PORT: ${APP_GITEA_MAIN_PORT}
       GITEA__server__SSH_DOMAIN: ${APP_DOMAIN}
       GITEA__server__SSH_PORT: 2222
       GITEA__server__SSH_LISTEN_PORT: 2222
