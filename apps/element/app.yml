@@ -51,6 +51,6 @@ metadata:
   torOnly: false
 
 containers:
-- image: ghcr.io/runcitadel/element-web:develop@sha256:a5cc383669e7ae6ddcf74123d860e4758eaf31e9c1c1f7f3534976a0bb509afc
+- image: vectorim/element-web:v1.11.8@sha256:17ecf38a32df9200a6d45dd637bf6216555c3e8fc235ac458f818135bab9dfb8
   port: 80
   name: web
